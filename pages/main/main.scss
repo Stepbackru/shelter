@@ -1,2 +1,40 @@
 @import "./constants.scss", "./clear.scss";
 
+.wrapper {
+  max-width: 128rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: $header-h;
+  position: absolute;
+  top: 6rem;
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  
+  .logo__title {
+    color: $logo-title-color;
+    font-family: $logo-title-ff;
+    font-size: $logo-title-fz;
+    font-weight: $logo-title-fw;
+    letter-spacing: $logo-title-ls;
+  }
+  .logo__subtitle {
+    color: $logo-subtitle-color;
+    font-family: $logo-subtitle-ff;
+    font-size: $logo-subtitle-fz;
+    font-weight: $logo-subtitle-fw;
+    letter-spacing: $logo-subtitle-ls;
+  }
+}
+

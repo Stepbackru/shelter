@@ -10,15 +10,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body, ul {
+body, ul, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  outline: none;
 }
 
 a {
@@ -33,5 +27,53 @@ button:hover {
 
 ul {
   list-style-type: none;
+}
+
+.wrapper {
+  max-width: 128rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 6rem;
+  position: absolute;
+  top: 6rem;
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo .logo__title {
+  color: #F1CDB3;
+  font-family: Georgia, serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.logo .logo__subtitle {
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 /*# sourceMappingURL=main.css.map */
