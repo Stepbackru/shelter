@@ -74,5 +74,6 @@
   .menu__link-active {
     color: $menu-link-color-active;
     border-bottom: $menu-link-bb-active;
+    line-height: $menu-link-active-lh;
   }
 }
