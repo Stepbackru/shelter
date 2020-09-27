@@ -49,6 +49,9 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -75,5 +78,56 @@ ul {
   font-size: 1.3rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
+}
+
+.menu {
+  height: 2.4rem;
+  padding: 0.4rem 0 0 0;
+}
+
+.menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .menu__item {
+  padding: 0 1.5rem;
+}
+
+.menu .menu__item:first-child {
+  padding-left: 0;
+}
+
+.menu .menu__item:nth-child(2) {
+  padding: 0 1.9rem 0 2.1rem;
+}
+
+.menu .menu__item:nth-child(3) {
+  padding-right: 2.2rem;
+}
+
+.menu .menu__item:nth-child(4) {
+  padding-right: 0;
+}
+
+.menu .menu__link {
+  color: #CDCDCD;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
+.menu .menu__link:hover {
+  color: #FFFFFF;
+}
+
+.menu .menu__link-active {
+  color: #FFFFFF;
+  border-bottom: 0.3rem solid #F1CDB3;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,9 +1,22 @@
 //width & height
 $header-h: 6rem;
+$menu-h: 2.4rem;
+
+//padding & margin
+$menu-p: 0.4rem 0 0 0;
+$menu-item-p: 0 1.5rem;
+$menu-item-pl1: 0;
+$menu-item-p2: 0 1.9rem 0 2.1rem;
+$menu-item-pr3: 2.2rem;
+$menu-item-pr4: 0;
 
 //colors
 $logo-title-color: #F1CDB3;
 $logo-subtitle-color: #FFFFFF;
+
+$menu-link-color: #CDCDCD;
+$menu-link-color-h: #FFFFFF;
+$menu-link-color-active: #FFFFFF;
 
 //fonts
 $logo-title-ff: Georgia, serif;
@@ -13,6 +26,15 @@ $logo-subtitle-ff: Arial, sans-serif;
 $logo-subtitle-fz: 1.3rem;
 $logo-subtitle-fw: 400;
 
+$menu-link-ff: Arial, sans-serif;
+$menu-link-fz: 1.5rem;
+$menu-link-fw: 400;
+
 //letter-spacing & line-height
 $logo-title-ls: 0.2rem;
 $logo-subtitle-ls: 0.1rem;
+
+$menu-link-lh: 2.5rem;
+
+//borders & outline
+$menu-link-bb-active: 0.3rem solid #F1CDB3;
