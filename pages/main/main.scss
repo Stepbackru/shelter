@@ -8,7 +8,6 @@
 
 .header {
   width: 100%;
-  height: $header-h;
   position: absolute;
   top: 6rem;
   
@@ -31,6 +30,7 @@
     letter-spacing: $logo-title-ls;
   }
   .logo__subtitle {
+    padding: $logo-subtitle-p;
     color: $logo-subtitle-color;
     font-family: $logo-subtitle-ff;
     font-size: $logo-subtitle-fz;
@@ -40,28 +40,14 @@
 }
 
 .menu {
-  height: $menu-h;
-  padding: $menu-p;
+  width: $menu-w;
   .menu__list {
     display: flex;
-    justify-content: center;
-  }
-  .menu__item {
-    padding: $menu-item-p;
-    &:first-child {
-      padding-left: $menu-item-pl1;
-    }
-    &:nth-child(2) {
-      padding: $menu-item-p2;
-    }
-    &:nth-child(3) {
-      padding-right: $menu-item-pr3;
-    }
-    &:nth-child(4) {
-      padding-right: $menu-item-pr4;
-    }
+    justify-content: space-between;
+    width: 100%;
   }
   .menu__link {
+    display: block;
     color: $menu-link-color;
     font-family: $menu-link-ff;
     font-size: $menu-link-fz;
@@ -74,6 +60,21 @@
   .menu__link-active {
     color: $menu-link-color-active;
     border-bottom: $menu-link-bb-active;
-    line-height: $menu-link-active-lh;
+  }
+}
+
+.main {
+  width: 100%;
+}
+
+.main-page {
+  width: 100%;
+  height: 90.8rem;
+  background: url(../../assets/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -1,14 +1,8 @@
 //width & height
-$header-h: 6rem;
-$menu-h: 2.4rem;
+$menu-w: 44.3rem;
 
 //padding & margin
-$menu-p: 0.4rem 0 0 0;
-$menu-item-p: 0 1.5rem;
-$menu-item-pl1: 0;
-$menu-item-p2: 0 1.9rem 0 2.1rem;
-$menu-item-pr3: 2.2rem;
-$menu-item-pr4: 0;
+$logo-subtitle-p: 0.9rem 0 0 0.45rem;
 
 //colors
 $logo-title-color: #F1CDB3;
@@ -32,10 +26,9 @@ $menu-link-fw: 400;
 
 //letter-spacing & line-height
 $logo-title-ls: 0.2rem;
-$logo-subtitle-ls: 0.1rem;
+$logo-subtitle-ls: 0.13rem;
 
-$menu-link-lh: 2rem;
-$menu-link-active-lh: 2.5rem;
+$menu-link-lh: 2.2rem;
 
 //borders & outline
 $menu-link-bb-active: 0.3rem solid #F1CDB3;

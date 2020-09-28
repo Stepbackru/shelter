@@ -37,7 +37,6 @@ ul {
 
 .header {
   width: 100%;
-  height: 6rem;
   position: absolute;
   top: 6rem;
 }
@@ -73,53 +72,35 @@ ul {
 }
 
 .logo .logo__subtitle {
+  padding: 0.9rem 0 0 0.45rem;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.13rem;
 }
 
 .menu {
-  height: 2.4rem;
-  padding: 0.4rem 0 0 0;
+  width: 44.3rem;
 }
 
 .menu .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.menu .menu__item {
-  padding: 0 1.5rem;
-}
-
-.menu .menu__item:first-child {
-  padding-left: 0;
-}
-
-.menu .menu__item:nth-child(2) {
-  padding: 0 1.9rem 0 2.1rem;
-}
-
-.menu .menu__item:nth-child(3) {
-  padding-right: 2.2rem;
-}
-
-.menu .menu__item:nth-child(4) {
-  padding-right: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .menu .menu__link {
+  display: block;
   color: #CDCDCD;
   font-family: Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2rem;
+  line-height: 2.2rem;
 }
 
 .menu .menu__link:hover {
@@ -129,6 +110,27 @@ ul {
 .menu .menu__link-active {
   color: #FFFFFF;
   border-bottom: 0.3rem solid #F1CDB3;
-  line-height: 2.5rem;
+}
+
+.main {
+  width: 100%;
+}
+
+.main-page {
+  width: 100%;
+  height: 90.8rem;
+  background: url(../../assets/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.main-page .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
