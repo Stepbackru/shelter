@@ -124,3 +124,45 @@
   }
 }
 
+.about {
+  width: 100%;
+  height: 58.8rem;
+  background: $about-bg;
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about__pets {
+    margin: $about-pets-m;
+  }
+
+  .about__content {
+    height: $about-content-h;
+    margin: $about-content-m;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .about__caption {
+      max-width: $about-caption-mw;
+      color: $about-caption-color;
+      font-family: $about-caption-ff;
+      font-size: $about-caption-fz;
+      font-weight: $about-caption-fw;
+      line-height: $about-caption-lh;
+      letter-spacing: $about-caption-ls;
+    }
+    .about__text {
+      max-width: $about-text-mw;
+      color: $about-text-color;
+      font-family: $about-text-ff;
+      font-size: $about-text-fz;
+      font-weight: $about-text-fw;
+      line-height: $about-text-lh;
+    }
+  }
+}
+  
