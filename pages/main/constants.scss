@@ -1,8 +1,18 @@
 //width & height
 $menu-w: 44.3rem;
 
+
+$main-page-content-h: 32.1rem;
+$main-page-caption-mw: 31rem;
+$main-page-button-w: 20.7rem;
+$main-page-button-h: 5.2rem;
+$main-page-text-mw: 46rem;
+
 //padding & margin
 $logo-subtitle-p: 0.9rem 0 0 0.45rem;
+
+$main-page-content-m: 9.8rem 4.2rem 0 0;
+$main-page-part-m: 18rem 0 0 0;
 
 //colors
 $logo-title-color: #F1CDB3;
@@ -11,6 +21,10 @@ $logo-subtitle-color: #FFFFFF;
 $menu-link-color: #CDCDCD;
 $menu-link-color-h: #FFFFFF;
 $menu-link-color-active: #FFFFFF;
+
+$main-page-caption-color: #FFFFFF;
+$main-page-text-color: #CDCDCD;
+$main-page-link-color: #292929;
 
 //fonts
 $logo-title-ff: Georgia, serif;
@@ -24,11 +38,33 @@ $menu-link-ff: Arial, sans-serif;
 $menu-link-fz: 1.5rem;
 $menu-link-fw: 400;
 
+
+$main-page-caption-ff: Georgia, serif;
+$main-page-caption-fz: 4.4rem;
+$main-page-caption-fw: 400;
+$main-page-text-ff: Arial, sans-serif;
+$main-page-text-fz: 1.5rem;
+$main-page-text-fw: 400;
+$main-page-link-ff: Georgia, serif;
+$main-page-link-fz: 1.7rem;
+$main-page-link-fw: 400;
+
 //letter-spacing & line-height
 $logo-title-ls: 0.2rem;
 $logo-subtitle-ls: 0.13rem;
 
 $menu-link-lh: 2.2rem;
 
+$main-page-caption-lh: 5.7rem;
+$main-page-text-lh: 2.4rem;
+$main-page-link-ls: 0.1rem;
+
+//backgrounds
+$main-page-bg: url(../../assets/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+$main-page-button-bg: #F1CDB3;
+
 //borders & outline
 $menu-link-bb-active: 0.3rem solid #F1CDB3;
+
+$main-page-button-bradius: 3rem;
+

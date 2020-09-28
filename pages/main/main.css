@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body, ul, h1, h2, h3, h4, h5, h6 {
+body, ul, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
@@ -132,5 +132,66 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-page .main-page__content {
+  margin: 9.8rem 4.2rem 0 0;
+  height: 32.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-page .main-page__content .main-page__caption {
+  max-width: 31rem;
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+  font-size: 4.4rem;
+  font-weight: 400;
+  line-height: 5.7rem;
+}
+
+.main-page .main-page__content .main-page__text {
+  max-width: 46rem;
+  color: #CDCDCD;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.main-page .main-page__content .main-page__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20.7rem;
+  height: 5.2rem;
+  background: #F1CDB3;
+  border-radius: 3rem;
+}
+
+.main-page .main-page__content .main-page__button .main-page__link {
+  color: #292929;
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.main-page .main-page__part {
+  margin: 18rem 0 0 0;
 }
 /*# sourceMappingURL=main.css.map */
