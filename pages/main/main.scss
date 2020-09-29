@@ -1,4 +1,4 @@
-@import "./constants.scss", "./clear.scss";
+@import "./constants.scss", "./mixins.scss", "./clear.scss";
 
 .wrapper {
   max-width: 128rem;
@@ -12,9 +12,7 @@
   top: 6rem;
   
   .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex($content: space-between);
   }
 }
 
@@ -23,24 +21,18 @@
   flex-direction: column;
   
   .logo__title {
-    color: $logo-title-color;
-    font-family: $logo-title-ff;
-    font-size: $logo-title-fz;
-    font-weight: $logo-title-fw;
-    letter-spacing: $logo-title-ls;
+    @include caption($color: $primary, $fz: 3.2rem);
+    letter-spacing: 0.2rem;
   }
   .logo__subtitle {
-    padding: $logo-subtitle-p;
-    color: $logo-subtitle-color;
-    font-family: $logo-subtitle-ff;
-    font-size: $logo-subtitle-fz;
-    font-weight: $logo-subtitle-fw;
-    letter-spacing: $logo-subtitle-ls;
+    @include text($color: $light, $fz: 1.3rem);
+    padding: 0.9rem 0 0 0.45rem;
+    letter-spacing: 0.13rem;
   }
 }
 
 .menu {
-  width: $menu-w;
+  width: 44.3rem;
   .menu__list {
     display: flex;
     justify-content: space-between;
@@ -48,87 +40,68 @@
   }
   .menu__link {
     display: block;
-    color: $menu-link-color;
-    font-family: $menu-link-ff;
-    font-size: $menu-link-fz;
-    font-weight: $menu-link-fw;
-    line-height: $menu-link-lh;
+    @include text($color: $dark-s, $fz: 1.5rem);
+    line-height: 2.2rem;
+
     &:hover {
-      color: $menu-link-color-h;
+      color: $light;
     }
   }
   .menu__link-active {
-    color: $menu-link-color-active;
-    border-bottom: $menu-link-bb-active;
+    color: $light;
+    border-bottom: 0.3rem solid $primary;
   }
-}
-
-.main {
-  width: 100%;
 }
 
 .main-page {
-  width: 100%;
-  height: 90.8rem;
-  background: $main-page-bg;
+  @include main-block($max-height: 90.8rem, $bg: $main-page-bg);
 
   .wrapper {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
   }
 
   .main-page__content {
-    margin: $main-page-content-m;
-    height: $main-page-content-h;
+    margin: 9.8rem 4.2rem 0 0;
+    height: 32.1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   
       .main-page__caption {
-        max-width: $main-page-caption-mw;
-        color: $main-page-caption-color;
-        font-family: $main-page-caption-ff;
-        font-size: $main-page-caption-fz;
-        font-weight: $main-page-caption-fw;
-        line-height: $main-page-caption-lh;
+        max-width: 31rem;
+        @include caption($color: $light, $fz: 4.4rem);
+        line-height: 5.7rem;
       }
       .main-page__text {
-        max-width: $main-page-text-mw;
-        color: $main-page-text-color;
-        font-family: $main-page-text-ff;
-        font-size: $main-page-text-fz;
-        font-weight: $main-page-text-fw;
-        line-height: $main-page-text-lh;
+        max-width: 46rem;
+        @include text($color: $dark-s, $fz: 1.5rem);
+        line-height: 2.4rem;
       }
       .main-page__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: $main-page-button-w;
-        height: $main-page-button-h;
-        background: $main-page-button-bg;
-        border-radius: $main-page-button-bradius;
+        width: 20.7rem;
+        height: 5.2rem;
+        background: $primary;
+        border-radius: 3rem;
         .main-page__link {
-          color: $main-page-link-color;
-          font-family: $main-page-link-ff;
-          font-size: $main-page-link-fz;
-          font-weight: $main-page-link-fw;
-          letter-spacing: $main-page-link-ls;
+          display: block;
+          width: 100%;
+          height: 100%;
+          @include caption($color: $dark, $fz: 1.7rem);
+          letter-spacing: 0.1rem;
+          line-height: 5.1rem;
+          text-align: center;
         }
       }
   }
 
   .main-page__part {
-    margin:$main-page-part-m;
+    margin: 18rem 0 0 0;
   }
 }
 
 .about {
-  width: 100%;
-  height: 58.8rem;
-  background: $about-bg;
+  @include main-block($max-height: 58.8rem, $bg: $light);
 
   .wrapper {
     height: 100%;
@@ -137,33 +110,26 @@
   }
   
   .about__pets {
-    margin: $about-pets-m;
+    margin: 8rem 12rem 9.8rem 0;
   }
 
   .about__content {
-    height: $about-content-h;
-    margin: $about-content-m;
+    height: 38rem;
+    margin: 9.5rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     .about__caption {
-      max-width: $about-caption-mw;
-      color: $about-caption-color;
-      font-family: $about-caption-ff;
-      font-size: $about-caption-fz;
-      font-weight: $about-caption-fw;
-      line-height: $about-caption-lh;
-      letter-spacing: $about-caption-ls;
+      max-width: 37rem;
+      @include caption($color: $dark-l, $fz: 3.5rem);
+      line-height: 4.5rem;
+      letter-spacing: 0.21rem;
     }
     .about__text {
-      max-width: $about-text-mw;
-      color: $about-text-color;
-      font-family: $about-text-ff;
-      font-size: $about-text-fz;
-      font-weight: $about-text-fw;
-      line-height: $about-text-lh;
+      max-width: 43rem;
+      @include text($color: $dark-xl, $fz: 1.5rem);
+      line-height: 2.4rem;
     }
   }
 }
-  

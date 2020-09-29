@@ -1,0 +1,26 @@
+@mixin flex($content: center, $align: center) {
+  display: flex;
+  justify-content: $content;
+  align-items: $align;
+}
+@mixin main-block($max-height, $bg, $width: 100%) {
+  width: $width;
+  max-height: $max-height;
+  background: $bg;
+}
+@mixin caption($color, $fz, $ff: Georgia, $fw: 400) {
+  color: $color;
+  font: {
+    family: $ff, serif;
+    size: $fz;
+    weight: $fw;
+  }
+}
+@mixin text ($color, $fz, $ff: Arial, $fw: 400) {
+  color: $color;
+  font: {
+    family: $ff, sans-serif;
+    size: $fz;
+    weight: $fw;
+  }
+}
