@@ -133,3 +133,25 @@
     }
   }
 }
+
+.friends {
+  padding: 80rem 0 10rem 0;
+  @include main-block($max-height: 87.7rem, $bg: $light-l);
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .friends__caption {
+    max-width: 40rem;
+    @include caption($color: $dark-l, $fz: 3.5rem);
+    text-align: center;
+    letter-spacing: 0.2rem;
+    
+    span {
+      display: block;
+    }
+  }
+}
