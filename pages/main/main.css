@@ -177,13 +177,13 @@ ul {
   display: block;
   width: 100%;
   height: 100%;
+  letter-spacing: 0.1rem;
+  line-height: 5.1rem;
+  text-align: center;
   color: #292929;
   font-family: Georgia, serif;
   font-size: 1.7rem;
   font-weight: 400;
-  letter-spacing: 0.1rem;
-  line-height: 5.1rem;
-  text-align: center;
 }
 
 .main-page .main-page__content .main-page__button:hover {
@@ -323,6 +323,7 @@ ul {
 
 .friends .friends__slider .pets {
   max-width: 99rem;
+  margin: 0 5.4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,11 +333,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 5.4rem;
 }
 
 .friends .friends__slider .pets__card {
   max-width: 27rem;
+  padding: 0 0 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -350,7 +351,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 0 3rem 0;
   background: #FAFAFA;
 }
 
@@ -385,6 +385,7 @@ ul {
 .friends .friends__slider .pets__button {
   width: 18.7rem;
   height: 5.2rem;
+  background: none;
   border-radius: 3rem;
   border: 2px solid #F1CDB3;
 }
@@ -398,21 +399,21 @@ ul {
   display: block;
   width: 100%;
   height: 100%;
+  letter-spacing: 0.1rem;
+  line-height: 5.1rem;
+  text-align: center;
   color: #292929;
   font-family: Georgia, serif;
   font-size: 1.7rem;
   font-weight: 400;
-  letter-spacing: 0.1rem;
-  line-height: 5.1rem;
-  text-align: center;
 }
 
 .friends__button {
+  margin: 6.1rem 0;
   width: 26.1rem;
   height: 5.2rem;
-  margin: 6.1rem 0;
-  border-radius: 3rem;
   background: #F1CDB3;
+  border-radius: 3rem;
 }
 
 .friends__button:hover {
@@ -423,12 +424,12 @@ ul {
   display: block;
   width: 100%;
   height: 100%;
+  letter-spacing: 0.1rem;
+  line-height: 5.1rem;
+  text-align: center;
   color: #292929;
   font-family: Georgia, serif;
   font-size: 1.7rem;
   font-weight: 400;
-  letter-spacing: 0.1rem;
-  line-height: 5.1rem;
-  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
