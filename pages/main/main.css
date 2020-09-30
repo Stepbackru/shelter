@@ -107,7 +107,9 @@ ul {
   color: #FFFFFF;
 }
 
-.menu .menu__link-active {
+.menu .menu__link-active,
+.menu .menu__link:active,
+.menu .menu__link:focus {
   color: #FFFFFF;
   border-bottom: 0.3rem solid #F1CDB3;
 }
@@ -184,6 +186,10 @@ ul {
   text-align: center;
 }
 
+.main-page .main-page__content .main-page__button:hover {
+  background: #FDDCC4;
+}
+
 .main-page .main-page__part {
   margin: 18rem 0 0 0;
 }
@@ -243,14 +249,13 @@ ul {
 }
 
 .friends {
-  padding: 80rem 0 10rem 0;
+  padding: 8.2rem 0 10rem 0;
   width: 100%;
   max-height: 87.7rem;
   background: #F6F6F6;
 }
 
 .friends .wrapper {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,17 +268,167 @@ ul {
           flex-direction: column;
 }
 
-.friends .friends__caption {
+.friends__caption {
   max-width: 40rem;
   color: #545454;
   font-family: Georgia, serif;
   font-size: 3.5rem;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 0.2rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.21rem;
 }
 
-.friends .friends__caption span {
+.friends__caption span {
   display: block;
+}
+
+.friends .friends__slider {
+  max-width: 100%;
+  max-height: 43.5rem;
+  margin: 6rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.friends .friends__slider .friends__arrow {
+  max-width: 5.2rem;
+  max-height: 5.2rem;
+  border: 0.2rem solid #F1CDB3;
+  border-radius: 50%;
+  padding: 1.4rem 1.6rem 1.8rem 1.6rem;
+  background: none;
+}
+
+.friends .friends__slider .friends__arrow:hover {
+  background: #FDDCC4;
+  border-color: #FDDCC4;
+}
+
+.friends .friends__slider .friends__arrow-left {
+  padding-top: 1.6rem;
+}
+
+.friends .friends__slider .friends__arrow-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.friends .friends__slider .pets {
+  max-width: 99rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 5.4rem;
+}
+
+.friends .friends__slider .pets__card {
+  max-width: 27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 0 3rem 0;
+  background: #FAFAFA;
+}
+
+.friends .friends__slider .pets__card:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.friends .friends__slider .pets__card:nth-child(2n) {
+  margin: 0 9rem;
+}
+
+.friends .friends__slider .pets__photo {
+  width: 27rem;
+  height: 27rem;
+}
+
+.friends .friends__slider .pets__image {
+  width: 100%;
+  height: 100%;
+}
+
+.friends .friends__slider .pets__name {
+  color: #545454;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 3rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.friends .friends__slider .pets__button {
+  width: 18.7rem;
+  height: 5.2rem;
+  border-radius: 3rem;
+  border: 2px solid #F1CDB3;
+}
+
+.friends .friends__slider .pets__button:hover {
+  background: #FDDCC4;
+  border-color: #FDDCC4;
+}
+
+.friends .friends__slider .pets__button .pets__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #292929;
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 5.1rem;
+  text-align: center;
+}
+
+.friends__button {
+  width: 26.1rem;
+  height: 5.2rem;
+  margin: 6.1rem 0;
+  border-radius: 3rem;
+  background: #F1CDB3;
+}
+
+.friends__button:hover {
+  background: #FDDCC4;
+}
+
+.friends__button .friends__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #292929;
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 5.1rem;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

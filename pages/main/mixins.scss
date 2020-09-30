@@ -24,3 +24,9 @@
     weight: $fw;
   }
 }
+@mixin arrow($color) {
+  border: 0.2rem solid $color;
+  border-radius: 50%;
+  padding: 1.4rem 1.6rem 1.8rem 1.6rem;
+  background: none;
+}

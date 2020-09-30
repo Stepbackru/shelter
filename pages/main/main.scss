@@ -47,7 +47,9 @@
       color: $light;
     }
   }
-  .menu__link-active {
+  .menu__link-active,
+  .menu__link:active,
+  .menu__link:focus {
     color: $light;
     border-bottom: 0.3rem solid $primary;
   }
@@ -92,6 +94,9 @@
           line-height: 5.1rem;
           text-align: center;
         }
+        &:hover {
+          background: $primary-l;
+        }
       }
   }
 
@@ -135,23 +140,118 @@
 }
 
 .friends {
-  padding: 80rem 0 10rem 0;
+  padding: 8.2rem 0 10rem 0;
   @include main-block($max-height: 87.7rem, $bg: $light-l);
 
   .wrapper {
-    height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .friends__caption {
+  &__caption {
     max-width: 40rem;
     @include caption($color: $dark-l, $fz: 3.5rem);
     text-align: center;
-    letter-spacing: 0.2rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.21rem;
     
     span {
       display: block;
+    }
+  }
+  .friends__slider {
+    max-width: 100%;
+    max-height: 43.5rem;
+    margin: 6rem 0 0 0;
+    @include flex($content: space-between);
+    
+    .friends__arrow {
+      max-width: 5.2rem;
+      max-height: 5.2rem;
+      @include arrow($primary);
+      &:hover {
+        background: $primary-l;
+        border-color: $primary-l;
+      }
+    }
+    .friends__arrow-left {
+      padding-top: 1.6rem;
+    }
+    .friends__arrow-right {
+      transform: rotate(180deg);
+    }
+    
+    .pets {
+      max-width: 99rem;
+      @include flex($content: space-between);
+      margin: 0 5.4rem;
+      
+      &__card {
+        max-width: 27rem;
+        @include flex();
+        flex-direction: column;
+        padding: 0 0 3rem 0;
+        background: $light-s;
+        &:hover {
+          cursor: pointer;
+          background: $light;
+        }
+      }
+      &__card:nth-child(2n) {
+        margin: 0 9rem;
+      }
+      &__photo {
+        width: 27rem;
+        height: 27rem;
+      }
+      &__image {
+        width: 100%;
+        height: 100%;
+      }
+      &__name {
+        @include caption($color: $dark-l, $fz: 2rem);
+        margin: 3rem 0;
+        letter-spacing: 0.1rem;
+      }
+      
+      &__button {
+        width: 18.7rem;
+        height: 5.2rem;
+        border-radius: 3rem;
+        border: 2px solid $primary;
+        &:hover {
+          background: $primary-l;
+          border-color: $primary-l;
+        }
+        .pets__link {
+          display: block;
+          width: 100%;
+          height: 100%;
+          @include caption($color: $dark, $fz: 1.7rem);
+          letter-spacing: 0.1rem;
+          line-height: 5.1rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__button {
+    width: 26.1rem;
+    height: 5.2rem;
+    margin: 6.1rem 0;
+    border-radius: 3rem;
+    background: $primary;
+    &:hover {
+      background: $primary-l;
+    }
+    .friends__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      @include caption($color: $dark, $fz: 1.7rem);
+      letter-spacing: 0.1rem;
+      line-height: 5.1rem;
+      text-align: center;
     }
   }
 }
