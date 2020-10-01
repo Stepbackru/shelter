@@ -352,6 +352,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #FAFAFA;
+  border-radius: 0.9rem;
 }
 
 .friends .friends__slider .pets__card:hover {

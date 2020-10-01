@@ -184,6 +184,7 @@
         @include flex;
         flex-direction: column;
         background: $light-s;
+        border-radius: 0.9rem;
         &:hover {
           cursor: pointer;
           background: $light;
