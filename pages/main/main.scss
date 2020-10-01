@@ -237,7 +237,7 @@
   @include main-block($max-height: 61.1rem, $bg: $light);
 
   .wrapper {
-    padding: 8rem 0 10rem 0;
+    padding: 8rem 0 4.1rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -287,6 +287,69 @@
         @include caption($color: $dark-l, $fz: 2rem);
         letter-spacing: 0.105rem;
       }
+    }
+  }
+}
+
+.donation {
+  @include main-block($max-height: 46.4rem, $bg: $light-l);
+
+  .wrapper {
+    padding: 8rem 0 10rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__pets {
+    margin: 1.2rem 3.1rem 0 0;
+  }
+  &__content {
+    margin: 0.4rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+
+    .donation__caption {
+      max-width: 30rem;
+      @include caption($color: $dark-l, $fz: 3.5rem);
+      line-height: 4.38rem;
+      letter-spacing: 0.2rem;
+    }
+    .donation__subcaption {
+      max-width: 31rem;
+      margin: 2rem 0;
+      @include caption($color: $dark-l, $fz: 1.5rem);
+      letter-spacing: 0.086rem;
+    }
+    .card {
+      max-width: 34.9rem;
+      max-height: 4.3rem;
+      padding: 1rem 1.4rem;
+      display: flex;
+      position: relative;
+      background: $primary;
+      border-radius: 0.9rem;
+      &:hover {
+        background: $primary-l;
+      }
+
+      &__number {
+        margin-left: 1.5rem;
+        @include caption($color: $dark-l, $fz: 2rem);
+        letter-spacing: 0.12rem;
+      }
+      &__link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .donation__info {
+      max-width: 38rem;
+      margin-top: 2.2rem;
+      @include text($color: $dark-m, $fz: 1.2rem);
+      font-style: italic;
+      line-height: 1.8rem;
     }
   }
 }
