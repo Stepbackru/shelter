@@ -82,10 +82,7 @@
       }
       .main-page__button {
         @include button($width: 20.7rem, $bg: $primary);
-        .main-page__link {
-          @include button-link;
-          @include caption($color: $dark, $fz: 1.7rem);
-        }
+        @include caption($color: $dark, $fz: 1.7rem);
         &:hover {
           background: $primary-l;
         }
@@ -209,14 +206,11 @@
       
       &__button {
         @include button($width: 18.7rem);
+        @include caption($color: $dark, $fz: 1.7rem);
         border: 2px solid $primary;
         &:hover {
           background: $primary-l;
           border-color: $primary-l;
-        }
-        .pets__link {
-          @include button-link;
-          @include caption($color: $dark, $fz: 1.7rem);
         }
       }
     }
@@ -224,12 +218,9 @@
   &__button {
     margin: 6.1rem 0;
     @include button($width: 26.1rem, $bg: $primary);
+    @include caption($color: $dark, $fz: 1.7rem);
     &:hover {
       background: $primary-l;
-    }
-    .friends__link {
-      @include button-link;
-      @include caption($color: $dark, $fz: 1.7rem);
     }
   }
 }
