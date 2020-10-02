@@ -471,21 +471,21 @@ ul {
 
 .help__list {
   max-width: 100%;
+  margin: 6.2rem auto;
   height: 34rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 6.2rem 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .help__list .help__item {
   height: 11.1rem;
+  padding: 0 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,22 +501,6 @@ ul {
           justify-content: space-between;
 }
 
-.help__list .help__item:first-child {
-  margin-left: 13rem;
-}
-
-.help__list .help__item:nth-child(2n) {
-  margin: 0 12rem;
-}
-
-.help__list .help__item:nth-child(6) {
-  margin-left: 21.1rem;
-}
-
-.help__list .help__item:nth-child(8) {
-  margin-left: 12.5rem;
-}
-
 .help__list .help__item .help__image {
   display: block;
 }
@@ -526,7 +510,7 @@ ul {
   font-family: Georgia, serif;
   font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 0.105rem;
+  letter-spacing: 0.109rem;
 }
 
 .donation {

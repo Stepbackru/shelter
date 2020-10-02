@@ -256,37 +256,26 @@
   }
   &__list {
     max-width: 100%;
+    margin: 6.2rem auto;
     height: 34rem;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: 6.2rem 0 0 0;
+    justify-content: center;
 
     .help__item {
       height: 11.1rem;
+      padding: 0 6rem;
       display: flex;
       align-items:center;
       flex-direction: column;
       justify-content: space-between;
-      &:first-child {
-        margin-left: 13rem;
-      }
-      &:nth-child(2n) {
-        margin: 0 12rem;
-      }
-      &:nth-child(6) {
-        margin-left: 21.1rem;
-      }
-      &:nth-child(8) {
-        margin-left: 12.5rem;
-      }
 
       .help__image {
         display: block;
       }
       .help__title {
         @include caption($color: $dark-l, $fz: 2rem);
-        letter-spacing: 0.105rem;
+        letter-spacing: 0.109rem;
       }
     }
   }
