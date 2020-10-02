@@ -505,7 +505,7 @@ ul {
 }
 
 .donation .wrapper {
-  padding: 8rem 0 10rem 0;
+  padding: 8rem 0 10.1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,5 +584,133 @@ ul {
   font-weight: 400;
   font-style: italic;
   line-height: 1.8rem;
+}
+
+.footer {
+  width: 100%;
+  max-height: 35rem;
+  background: url(../../assets/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  padding: 3.8rem 0;
+}
+
+.footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .contacts,
+.footer .location {
+  max-width: 30rem;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .contacts__caption,
+.footer .location__caption {
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  letter-spacing: 0.21rem;
+}
+
+.footer .contacts__email, .footer .contacts__phone, .footer .contacts__boston, .footer .contacts__london,
+.footer .location__email,
+.footer .location__phone,
+.footer .location__boston,
+.footer .location__london {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #F1CDB3;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+}
+
+.footer .contacts__email::before, .footer .contacts__phone::before, .footer .contacts__boston::before, .footer .contacts__london::before,
+.footer .location__email::before,
+.footer .location__phone::before,
+.footer .location__boston::before,
+.footer .location__london::before {
+  margin-right: 2rem;
+}
+
+.footer .contacts__email:hover, .footer .contacts__phone:hover, .footer .contacts__boston:hover, .footer .contacts__london:hover,
+.footer .location__email:hover,
+.footer .location__phone:hover,
+.footer .location__boston:hover,
+.footer .location__london:hover {
+  color: #FDDCC4;
+}
+
+.footer .contacts__email,
+.footer .location__email {
+  margin: 4.4rem 0 3.7rem 0;
+  line-height: 2.6rem;
+}
+
+.footer .contacts__email::before,
+.footer .location__email::before {
+  content: url(../../assets/footer/mail.svg);
+}
+
+.footer .contacts__phone,
+.footer .location__phone {
+  line-height: 3rem;
+}
+
+.footer .contacts__phone::before,
+.footer .location__phone::before {
+  content: url(../../assets/footer/phone.svg);
+}
+
+.footer .contacts__boston,
+.footer .location__boston {
+  margin: 3.5rem 0 3.8rem 0;
+}
+
+.footer .contacts__boston::before,
+.footer .location__boston::before {
+  content: url(../../assets/footer/pin.svg);
+  margin: 0.5rem 2rem 0 -0.1rem;
+}
+
+.footer .contacts__london::before,
+.footer .location__london::before {
+  content: url(../../assets/footer/pin.svg);
+  margin: -0.5rem 2rem 0 -0.1rem;
+}
+
+.footer__image {
+  max-width: 32rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
