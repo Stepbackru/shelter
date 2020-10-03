@@ -6,54 +6,7 @@
   margin: 0 auto;
 }
 
-.header {
-  width: 100%;
-  position: absolute;
-  top: 6rem;
-  
-  .wrapper {
-    @include flex($content: space-between);
-  }
-
-  .logo {
-    display: flex;
-    flex-direction: column;
-    
-    .logo__title {
-      @include caption($color: $primary, $fz: 3.2rem);
-      letter-spacing: 0.2rem;
-    }
-    .logo__subtitle {
-      @include text($color: $light, $fz: 1.3rem);
-      padding: 0.9rem 0 0 0.45rem;
-      letter-spacing: 0.13rem;
-    }
-  }
-  .menu {
-    width: 44.3rem;
-    .menu__list {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-    .menu__link {
-      display: block;
-      @include text($color: $dark-s, $fz: 1.5rem);
-      line-height: 2.2rem;
-  
-      &:hover {
-        color: $light;
-      }
-    }
-    .menu__link-active,
-    .menu__link:active,
-    .menu__link:focus {
-      color: $light;
-      border-bottom: 0.3rem solid $primary;
-    }
-  }
-
-}
+@import "../../assets/components/header/header.scss";
 
 .main-page {
   @include main-block($max-height: 90.8rem, $bg: $main-page-bg);
@@ -312,7 +265,7 @@
       border-radius: 0.9rem;
 
       &::before {
-        content: url(../../assets/donation/credit-card.svg);
+        content: url(../../assets/images/donation/credit-card.svg);
         position: absolute;
         top: 1.1rem;
         left: 1.4rem;
@@ -330,69 +283,5 @@
     }
   }
 }
-.footer {
-  @include main-block($max-height: 35rem, $bg: $footer-bg);
-  padding: 3.8rem 0;
-  .wrapper {
-    @include flex($content: space-between, $align: flex-start);
-  }
-  .contacts,
-  .location {
-    max-width: 30rem;
-    padding: 2rem 0;
-    @include flex($align: flex-start);
-    flex-direction: column;
 
-    &__caption {
-      @include caption($color: $light, $fz: 3.5rem);
-      line-height: 4.4rem;
-      letter-spacing: 0.21rem;
-    }
-    &__email,
-    &__phone,
-    &__boston,
-    &__london {
-      display: flex;
-      @include caption($color: $primary, $fz: 2rem);
-      letter-spacing: 0.12rem;
-      &::before {
-        margin-right: 2rem;
-      }
-      &:hover {
-        color: $primary-l;
-      }
-    }
-    &__email {
-      margin: 4.4rem 0 3.7rem 0;
-      line-height: 2.6rem;
-      &::before {
-        content: url(../../assets/footer/mail.svg);
-      }
-    }
-    &__phone {
-      line-height: 3rem;
-      &::before {
-        content: url(../../assets/footer/phone.svg);
-      }
-    }
-    &__boston {
-      margin: 3.5rem 0 3.8rem 0;
-      &::before {
-        content: url(../../assets/footer/pin.svg);
-        margin: 0.5rem 2rem 0 -0.1rem;
-      }
-    }
-    &__london {
-      &::before {
-        content: url(../../assets/footer/pin.svg);
-        margin: -0.5rem 2rem 0 -0.1rem;
-      }
-    }
-  }
-  &__image {
-    max-width: 32rem;
-    display: flex;
-    justify-content: center;
-    padding-left: 2rem;
-  }
-}
+@import "../../assets/components/footer/footer.scss";

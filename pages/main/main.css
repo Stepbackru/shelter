@@ -35,6 +35,37 @@ ul {
   margin: 0 auto;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body, ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .header {
   width: 100%;
   position: absolute;
@@ -53,7 +84,7 @@ ul {
           align-items: center;
 }
 
-.logo {
+.header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +94,7 @@ ul {
           flex-direction: column;
 }
 
-.logo .logo__title {
+.header .logo .logo__title {
   color: #F1CDB3;
   font-family: Georgia, serif;
   font-size: 3.2rem;
@@ -71,7 +102,7 @@ ul {
   letter-spacing: 0.2rem;
 }
 
-.logo .logo__subtitle {
+.header .logo .logo__subtitle {
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   font-size: 1.3rem;
@@ -80,11 +111,11 @@ ul {
   letter-spacing: 0.13rem;
 }
 
-.menu {
+.header .menu {
   width: 44.3rem;
 }
 
-.menu .menu__list {
+.header .menu .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,7 +125,7 @@ ul {
   width: 100%;
 }
 
-.menu .menu__link {
+.header .menu .menu__link {
   display: block;
   color: #CDCDCD;
   font-family: Arial, sans-serif;
@@ -103,13 +134,13 @@ ul {
   line-height: 2.2rem;
 }
 
-.menu .menu__link:hover {
+.header .menu .menu__link:hover {
   color: #FFFFFF;
 }
 
-.menu .menu__link-active,
-.menu .menu__link:active,
-.menu .menu__link:focus {
+.header .menu .menu__link-active,
+.header .menu .menu__link:active,
+.header .menu .menu__link:focus {
   color: #FFFFFF;
   border-bottom: 0.3rem solid #F1CDB3;
 }
@@ -565,7 +596,7 @@ ul {
 }
 
 .donation__content .donation__card::before {
-  content: url(../../assets/donation/credit-card.svg);
+  content: url(../../assets/images/donation/credit-card.svg);
   position: absolute;
   top: 1.1rem;
   left: 1.4rem;
@@ -584,6 +615,37 @@ ul {
   font-weight: 400;
   font-style: italic;
   line-height: 1.8rem;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body, ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .footer {
@@ -673,7 +735,7 @@ ul {
 
 .footer .contacts__email::before,
 .footer .location__email::before {
-  content: url(../../assets/footer/mail.svg);
+  content: url(../../assets/images/footer/mail.svg);
 }
 
 .footer .contacts__phone,
@@ -683,7 +745,7 @@ ul {
 
 .footer .contacts__phone::before,
 .footer .location__phone::before {
-  content: url(../../assets/footer/phone.svg);
+  content: url(../../assets/images/footer/phone.svg);
 }
 
 .footer .contacts__boston,
@@ -693,13 +755,13 @@ ul {
 
 .footer .contacts__boston::before,
 .footer .location__boston::before {
-  content: url(../../assets/footer/pin.svg);
+  content: url(../../assets/images/footer/pin.svg);
   margin: 0.5rem 2rem 0 -0.1rem;
 }
 
 .footer .contacts__london::before,
 .footer .location__london::before {
-  content: url(../../assets/footer/pin.svg);
+  content: url(../../assets/images/footer/pin.svg);
   margin: -0.5rem 2rem 0 -0.1rem;
 }
 

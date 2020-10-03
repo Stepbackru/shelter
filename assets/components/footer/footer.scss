@@ -1,0 +1,68 @@
+@import "../constants.scss", "../mixins.scss", "../clear.scss";
+
+.footer {
+  @include main-block($max-height: 35rem, $bg: $footer-bg);
+  padding: 3.8rem 0;
+  .wrapper {
+    @include flex($content: space-between, $align: flex-start);
+  }
+  .contacts,
+  .location {
+    max-width: 30rem;
+    padding: 2rem 0;
+    @include flex($align: flex-start);
+    flex-direction: column;
+
+    &__caption {
+      @include caption($color: $light, $fz: 3.5rem);
+      line-height: 4.4rem;
+      letter-spacing: 0.21rem;
+    }
+    &__email,
+    &__phone,
+    &__boston,
+    &__london {
+      display: flex;
+      @include caption($color: $primary, $fz: 2rem);
+      letter-spacing: 0.12rem;
+      &::before {
+        margin-right: 2rem;
+      }
+      &:hover {
+        color: $primary-l;
+      }
+    }
+    &__email {
+      margin: 4.4rem 0 3.7rem 0;
+      line-height: 2.6rem;
+      &::before {
+        content: url(../../assets/images/footer/mail.svg);
+      }
+    }
+    &__phone {
+      line-height: 3rem;
+      &::before {
+        content: url(../../assets/images/footer/phone.svg);
+      }
+    }
+    &__boston {
+      margin: 3.5rem 0 3.8rem 0;
+      &::before {
+        content: url(../../assets/images/footer/pin.svg);
+        margin: 0.5rem 2rem 0 -0.1rem;
+      }
+    }
+    &__london {
+      &::before {
+        content: url(../../assets/images/footer/pin.svg);
+        margin: -0.5rem 2rem 0 -0.1rem;
+      }
+    }
+  }
+  &__image {
+    max-width: 32rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+}

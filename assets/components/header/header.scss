@@ -1,0 +1,50 @@
+@import "../constants.scss", "../mixins.scss", "../clear.scss";
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 6rem;
+  
+  .wrapper {
+    @include flex($content: space-between);
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    
+    .logo__title {
+      @include caption($color: $primary, $fz: 3.2rem);
+      letter-spacing: 0.2rem;
+    }
+    .logo__subtitle {
+      @include text($color: $light, $fz: 1.3rem);
+      padding: 0.9rem 0 0 0.45rem;
+      letter-spacing: 0.13rem;
+    }
+  }
+  .menu {
+    width: 44.3rem;
+    .menu__list {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .menu__link {
+      display: block;
+      @include text($color: $dark-s, $fz: 1.5rem);
+      line-height: 2.2rem;
+  
+      &:hover {
+        color: $light;
+      }
+    }
+    .menu__link-active,
+    .menu__link:active,
+    .menu__link:focus {
+      color: $light;
+      border-bottom: 0.3rem solid $primary;
+    }
+  }
+
+}
