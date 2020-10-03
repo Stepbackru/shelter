@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body, ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  max-width: 128rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body, ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  top: 6rem;
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .logo .logo__title {
+  color: #F1CDB3;
+  font-family: Georgia, serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.header .logo .logo__subtitle {
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 0.9rem 0 0 0.45rem;
+  letter-spacing: 0.13rem;
+}
+
+.header .menu {
+  width: 44.3rem;
+}
+
+.header .menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.header .menu .menu__link {
+  display: block;
+  color: #CDCDCD;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+
+.header .menu .menu__link:hover {
+  color: #FFFFFF;
+}
+
+.header .menu .menu__link-active,
+.header .menu .menu__link:active,
+.header .menu .menu__link:focus {
+  color: #FFFFFF;
+  border-bottom: 0.3rem solid #F1CDB3;
+}
+
+.header {
+  width: 100%;
+  max-height: 12rem;
+  background: #FFFFFF;
+  padding: 3rem 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.header .logo .logo__title {
+  color: #545454;
+}
+
+.header .logo .logo__subtitle {
+  color: #292929;
+}
+
+.header .menu .menu__link {
+  color: #545454;
+}
+
+.header .menu .menu__link:hover {
+  color: #292929;
+}
+
+.header .menu .menu__link-active,
+.header .menu .menu__link:active,
+.header .menu .menu__link:focus {
+  color: #292929;
+}
+
+.pets {
+  width: 100%;
+  max-height: 134.2rem;
+  background: #F6F6F6;
+}
+
+.pets .wrapper {
+  padding: 8.2rem 0 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pets__caption {
+  max-width: 40rem;
+  color: #545454;
+  font-family: Georgia, serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 4.4rem;
+  letter-spacing: 0.21rem;
+}
+
+.pets__caption span {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body, ul, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer {
+  width: 100%;
+  max-height: 35rem;
+  background: url(../../assets/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  padding: 3.8rem 0;
+}
+
+.footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer .contacts,
+.footer .location {
+  max-width: 30rem;
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .contacts__caption,
+.footer .location__caption {
+  color: #FFFFFF;
+  font-family: Georgia, serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4.4rem;
+  letter-spacing: 0.21rem;
+}
+
+.footer .contacts__email, .footer .contacts__phone, .footer .contacts__boston, .footer .contacts__london,
+.footer .location__email,
+.footer .location__phone,
+.footer .location__boston,
+.footer .location__london {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #F1CDB3;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.12rem;
+}
+
+.footer .contacts__email::before, .footer .contacts__phone::before, .footer .contacts__boston::before, .footer .contacts__london::before,
+.footer .location__email::before,
+.footer .location__phone::before,
+.footer .location__boston::before,
+.footer .location__london::before {
+  margin-right: 2rem;
+}
+
+.footer .contacts__email:hover, .footer .contacts__phone:hover, .footer .contacts__boston:hover, .footer .contacts__london:hover,
+.footer .location__email:hover,
+.footer .location__phone:hover,
+.footer .location__boston:hover,
+.footer .location__london:hover {
+  color: #FDDCC4;
+}
+
+.footer .contacts__email,
+.footer .location__email {
+  margin: 4.4rem 0 3.7rem 0;
+  line-height: 2.6rem;
+}
+
+.footer .contacts__email::before,
+.footer .location__email::before {
+  content: url(../../assets/images/footer/mail.svg);
+}
+
+.footer .contacts__phone,
+.footer .location__phone {
+  line-height: 3rem;
+}
+
+.footer .contacts__phone::before,
+.footer .location__phone::before {
+  content: url(../../assets/images/footer/phone.svg);
+}
+
+.footer .contacts__boston,
+.footer .location__boston {
+  margin: 3.5rem 0 3.8rem 0;
+}
+
+.footer .contacts__boston::before,
+.footer .location__boston::before {
+  content: url(../../assets/images/footer/pin.svg);
+  margin: 0.5rem 2rem 0 -0.1rem;
+}
+
+.footer .contacts__london::before,
+.footer .location__london::before {
+  content: url(../../assets/images/footer/pin.svg);
+  margin: -0.5rem 2rem 0 -0.1rem;
+}
+
+.footer__image {
+  max-width: 32rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2rem;
+}
+/*# sourceMappingURL=pets.css.map */
