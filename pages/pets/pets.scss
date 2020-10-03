@@ -40,15 +40,16 @@
 
 .pets {
   @include main-block($max-height: 134.2rem, $bg: $light-l);
+  padding: 8rem 0 10rem 0;
 
   .wrapper {
-    padding: 8.2rem 0 10rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   &__caption {
     max-width: 40rem;
+    margin-top: 0.2rem;
     @include caption($color: $dark-l, $fz: 3.5rem);
     text-align: center;
     line-height: 4.4rem;
@@ -59,7 +60,90 @@
     }
   }
 
-  
+  &__list {
+    max-width: 100%;
+    max-height: 93rem;
+    margin: 6rem 0 0 0;
+    @include flex($content: space-between);
+    flex-wrap: wrap;
+
+    .pets__card {
+      max-width: 27rem;
+      padding: 0 0 3rem 0;
+      @include flex;
+      flex-direction: column;
+      background: $light-s;
+      border-radius: 0.9rem;
+      &:hover {
+        cursor: pointer;
+        background: $light;
+      }
+
+      &:nth-child(n+5) {
+        margin-top: 3.1rem;
+      }
+    }
+    .pets__photo {
+      width: 27rem;
+      height: 27rem;
+    }
+    .pets__image {
+      width: 100%;
+      height: 100%;
+    }
+    .pets__name {
+      @include caption($color: $dark-l, $fz: 2rem);
+      margin: 3rem 0;
+      letter-spacing: 0.1rem;
+    }
+    
+    .pets__button {
+      @include button($width: 18.7rem);
+      @include caption($color: $dark, $fz: 1.7rem);
+      border: 2px solid $primary;
+      &:hover {
+        background: $primary-l;
+        border-color: $primary-l;
+      }
+    }
+  }
+
+  .pagination {
+    width: 34rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 0 0.1rem 0;
+
+    &__button {
+      width: 5.2rem;
+      height: 5.2rem;
+      @include caption($color: $dark, $fz: 2rem);
+      border: 0.2rem solid $primary;
+      border-radius: 50%;
+      outline: none;
+      &:hover {
+        background: $primary-l;
+        border-color: $primary-l
+      }
+    }
+    &__button-disabled {
+      @include caption($color: $dark-s, $fz: 2rem);
+      border-color: $dark-s;
+      background: none;
+      &:hover {
+        border-color: $dark-s;
+        background: none;
+      }
+    }
+    &__button-currentPage {
+      border: none;
+      background: $primary;
+      &:hover {
+        background: $primary-l;
+      }
+    }
+  }
+
 }
 
 

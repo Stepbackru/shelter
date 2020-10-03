@@ -181,10 +181,10 @@ ul {
   width: 100%;
   max-height: 134.2rem;
   background: #F6F6F6;
+  padding: 8rem 0 10rem 0;
 }
 
 .pets .wrapper {
-  padding: 8.2rem 0 10rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,6 +199,7 @@ ul {
 
 .pets__caption {
   max-width: 40rem;
+  margin-top: 0.2rem;
   color: #545454;
   font-family: Georgia, serif;
   font-size: 3.5rem;
@@ -210,6 +211,143 @@ ul {
 
 .pets__caption span {
   display: block;
+}
+
+.pets__list {
+  max-width: 100%;
+  max-height: 93rem;
+  margin: 6rem 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pets__list .pets__card {
+  max-width: 27rem;
+  padding: 0 0 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FAFAFA;
+  border-radius: 0.9rem;
+}
+
+.pets__list .pets__card:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.pets__list .pets__card:nth-child(n+5) {
+  margin-top: 3.1rem;
+}
+
+.pets__list .pets__photo {
+  width: 27rem;
+  height: 27rem;
+}
+
+.pets__list .pets__image {
+  width: 100%;
+  height: 100%;
+}
+
+.pets__list .pets__name {
+  color: #545454;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 3rem 0;
+  letter-spacing: 0.1rem;
+}
+
+.pets__list .pets__button {
+  width: 18.7rem;
+  height: 5.2rem;
+  background: none;
+  border-radius: 3rem;
+  display: block;
+  letter-spacing: 0.1rem;
+  line-height: 5.1rem;
+  text-align: center;
+  color: #292929;
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  border: 2px solid #F1CDB3;
+}
+
+.pets__list .pets__button:hover {
+  background: #FDDCC4;
+  border-color: #FDDCC4;
+}
+
+.pets .pagination {
+  width: 34rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 6rem 0 0.1rem 0;
+}
+
+.pets .pagination__button {
+  width: 5.2rem;
+  height: 5.2rem;
+  color: #292929;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 0.2rem solid #F1CDB3;
+  border-radius: 50%;
+  outline: none;
+}
+
+.pets .pagination__button:hover {
+  background: #FDDCC4;
+  border-color: #FDDCC4;
+}
+
+.pets .pagination__button-disabled {
+  color: #CDCDCD;
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  border-color: #CDCDCD;
+  background: none;
+}
+
+.pets .pagination__button-disabled:hover {
+  border-color: #CDCDCD;
+  background: none;
+}
+
+.pets .pagination__button-currentPage {
+  border: none;
+  background: #F1CDB3;
+}
+
+.pets .pagination__button-currentPage:hover {
+  background: #FDDCC4;
 }
 
 *,
