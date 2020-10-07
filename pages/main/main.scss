@@ -84,7 +84,6 @@
   
   @media (max-width: 1279px) {
     max-height: 104.8rem;
-    padding: 8rem 0 10rem 0;
   }
 
   .wrapper {
@@ -95,6 +94,7 @@
     @media (max-width: 1279px) {
       flex-direction: column-reverse;
       align-items: center;
+      padding: 8rem 0 10rem 0;
     }
   }
   
@@ -143,6 +143,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 1279px) {
+      // padding: 8rem 3rem 10rem;
+    }
   }
   &__caption {
     max-width: 40rem;
@@ -181,6 +185,12 @@
       max-width: 99rem;
       margin: 0 5.4rem;
       @include flex($content: space-between);
+
+      @media (max-width: 1279px) {
+        max-width: 58rem;
+        margin: 0 1.2rem;
+        overflow: hidden;
+      }
       
       .slider__card {
         max-width: 27rem;
@@ -196,6 +206,10 @@
       }
       .slider__card:nth-child(2n) {
         margin: 0 9rem;
+
+        @media (max-width: 1279px) {
+          margin: 0 0 0 4rem;
+        }
       }
       .slider__photo {
         width: 27rem;
