@@ -4,6 +4,10 @@
   width: 100%;
   position: absolute;
   top: 6rem;
+
+  @media (max-width: 1279px) {
+    top: 3rem;
+  }
   
   .wrapper {
     @include flex($content: space-between);

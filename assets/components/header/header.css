@@ -35,6 +35,12 @@ ul {
   top: 6rem;
 }
 
+@media (max-width: 1279px) {
+  .header {
+    top: 3rem;
+  }
+}
+
 .header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
