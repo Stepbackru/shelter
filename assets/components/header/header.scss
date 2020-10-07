@@ -81,9 +81,10 @@
     width: 44.3rem;
     
     @media (max-width: 767px) {
+      display: none;
       position: absolute;
       top: 0;
-      right: -200%;
+      // right: -200%;
       z-index: 99;
     }
 
