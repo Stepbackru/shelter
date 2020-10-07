@@ -23,6 +23,9 @@
   @media (max-width: 1279px) {
     max-height: 116.5rem
   }
+  @media (max-width: 767px) {
+    max-height: 82.3rem
+  }
 
   .wrapper {
     height: 100%;
@@ -39,16 +42,33 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    
+    @media (max-width: 767px) {
+      height: 29.6rem
+    }
   
       .main-page__caption {
         max-width: 31rem;
         @include caption($color: $light, $fz: 4.4rem);
         line-height: 5.7rem;
+        
+        @media (max-width: 767px) {
+          max-width: 30rem;
+          font-size: 2.5rem;
+          text-align: center;
+          line-height: 3.2rem;
+          letter-spacing: 0.15rem;
+        }
       }
       .main-page__text {
         max-width: 46rem;
         @include text($color: $dark-s, $fz: 1.5rem);
         line-height: 2.4rem;
+
+        @media (max-width: 767px) {
+          text-align: center;
+        }
       }
       .main-page__button {
         @include button($width: 20.7rem, $bg: $primary);
@@ -79,6 +99,12 @@
       max-height: 59.4rem;
       align-self: flex-end;
       margin: 10rem 0 0 0;
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+      max-width: 26rem;
+      max-height: 27.1rem;
+      margin: 10.6rem 0 0 0;
     }
   }
 }
