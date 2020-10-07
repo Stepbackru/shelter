@@ -143,10 +143,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    @media (max-width: 1279px) {
-      // padding: 8rem 3rem 10rem;
-    }
   }
   &__caption {
     max-width: 40rem;
@@ -249,11 +245,19 @@
 .help {
   @include main-block($max-height: 61.1rem, $bg: $light);
 
+  @media (max-width: 1279px) {
+    max-height: 77.9rem;
+  }
+
   .wrapper {
     padding: 8rem 0 4.1rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 1279px) {
+      padding: 8rem 0 10rem 0;
+    }
   }
   &__caption {
     max-width: 31rem;
@@ -274,6 +278,10 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    @media (max-width: 1279px) {
+      height: 50.5rem;
+    }
+
     .help__item {
       height: 11.1rem;
       padding: 0 6rem;
@@ -281,6 +289,12 @@
       align-items:center;
       flex-direction: column;
       justify-content: space-between;
+
+      @media (max-width: 1279px) {
+        margin: 0 3rem;
+        padding: 0;
+        width: 17rem;
+      }
 
       .help__image {
         display: block;
