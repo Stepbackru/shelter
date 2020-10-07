@@ -3,8 +3,18 @@
 .footer {
   @include main-block($max-height: 35rem, $bg: $footer-bg);
   padding: 3.8rem 0;
+
+  @media (max-width: 1279px) {
+    max-height: 63.9rem;
+    padding: 3.2rem 0;
+  }
   .wrapper {
     @include flex($content: space-between, $align: flex-start);
+
+    @media (max-width: 1279px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   .contacts,
   .location {
@@ -12,6 +22,14 @@
     padding: 2rem 0;
     @include flex($align: flex-start);
     flex-direction: column;
+
+    @media (max-width: 1279px) {
+      padding: 0;
+
+      &:first-child {
+        margin-right: 4rem;
+      }
+    }
 
     &__caption {
       @include caption($color: $light, $fz: 3.5rem);
@@ -64,5 +82,10 @@
     display: flex;
     justify-content: center;
     padding-left: 2rem;
+
+    @media (max-width: 1279px) {
+      margin: 5.6rem 0 0 0;
+      padding: 0;
+    }
   }
 }
