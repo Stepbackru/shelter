@@ -352,6 +352,9 @@
   @media (max-width: 1279px) {
     max-height: 77.9rem;
   }
+  @media (max-width: 767px) {
+    max-height: 74.5rem;
+  }
 
   .wrapper {
     padding: 8rem 0 4.1rem 0;
@@ -361,6 +364,9 @@
 
     @media (max-width: 1279px) {
       padding: 8rem 0 10rem 0;
+    }
+    @media (max-width: 767px) {
+      padding: 4.2rem 0;
     }
   }
   &__caption {
@@ -373,6 +379,12 @@
     span {
       display: block;
     }
+    @media (max-width: 767px) {
+      max-width: 23rem;
+      font-size: 2.5rem;
+      line-height: 3.3rem;
+      letter-spacing: 0.15rem;
+    }
   }
   &__list {
     max-width: 100%;
@@ -384,6 +396,11 @@
 
     @media (max-width: 1279px) {
       height: 50.5rem;
+    }
+    @media (max-width: 767px) {
+      margin: 4.1rem 0 1rem 0;
+      height: 58.5rem;
+      justify-content: flex-start;
     }
 
     .help__item {
@@ -399,13 +416,27 @@
         padding: 0;
         width: 17rem;
       }
+      @media (max-width: 767px) {
+        width: 13rem;
+        height: 8.7rem;
+        margin: 0 1.5rem;
+      }
 
       .help__image {
         display: block;
+
+        @media (max-width: 767px) {
+          width: 5rem;
+          height: 5rem;
+        }
       }
       .help__title {
         @include caption($color: $dark-l, $fz: 2rem);
         letter-spacing: 0.109rem;
+
+        @media (max-width: 767px) {
+          font-size: 1.5rem;
+        }
       }
     }
   }
