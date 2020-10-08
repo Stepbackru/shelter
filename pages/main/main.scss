@@ -200,11 +200,20 @@
 .pets {
   @include main-block($max-height: 87.7rem, $bg: $light-l);
 
+  @media (max-width: 767px) {
+    max-height: 79.1rem;
+  }
+
   .wrapper {
     padding: 8.2rem 0 10rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 767px) {
+      padding: 4.2rem 0.1rem;
+      position: relative;
+    }
   }
   &__caption {
     max-width: 40rem;
@@ -216,12 +225,24 @@
     span {
       display: block;
     }
+    
+    @media (max-width: 767px) {
+      max-width: 30rem;
+      font-size: 2.5rem;
+      line-height: 3.3rem;
+      letter-spacing: 0.14rem;
+    }
   }
   .slider {
     max-width: 100%;
     max-height: 43.5rem;
     margin: 6rem 0 0 0;
     @include flex($content: space-between);
+    
+    @media (max-width: 767px) {
+      max-height: 50.7rem;
+      margin: 4.2rem 0 0 0;
+    }
     
     &__arrow {
       max-width: 5.2rem;
@@ -231,12 +252,25 @@
         background: $primary-l;
         border-color: $primary-l;
       }
+      
+      @media (max-width: 767px) {
+        position: absolute;
+        bottom: 13.7rem;
+      }
     }
     &__arrow-left {
       padding-top: 1.6rem;
+      
+      @media (max-width: 767px) {
+        left: 6.9rem;
+      }
     }
     &__arrow-right {
       transform: rotate(180deg);
+
+      @media (max-width: 767px) {
+        right: 6.9rem;
+      }
     }
     
     &__content {
@@ -248,6 +282,10 @@
         max-width: 58rem;
         margin: 0 1.2rem;
         overflow: hidden;
+      }
+      @media (max-width: 767px) {
+        max-width: 27rem;
+        margin: 0;
       }
       
       .slider__card {
@@ -300,6 +338,10 @@
     @include caption($color: $dark, $fz: 1.7rem);
     &:hover {
       background: $primary-l;
+    }
+
+    @media (max-width: 767px) {
+      margin: 11.4rem 0 0 0;
     }
   }
 }
