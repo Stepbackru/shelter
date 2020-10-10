@@ -8,12 +8,21 @@
     max-height: 63.9rem;
     padding: 3.2rem 0;
   }
+  @media (max-width: 767px) {
+    max-height: 80.9rem;
+    padding: 3rem 0.1rem 0;
+  }
+
   .wrapper {
     @include flex($content: space-between, $align: flex-start);
 
     @media (max-width: 1279px) {
       flex-wrap: wrap;
       justify-content: center;
+    }
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-self: center;
     }
   }
   .contacts,
@@ -30,11 +39,33 @@
         margin-right: 4rem;
       }
     }
+    @media (max-width: 767px) {
+      align-items: center;
+
+      &:first-child {
+        margin-right: 0;
+      }
+      &:nth-child(2) {
+        margin-top: 3rem;
+      }
+    }
 
     &__caption {
       @include caption($color: $light, $fz: 3.5rem);
       line-height: 4.4rem;
       letter-spacing: 0.21rem;
+
+      
+      span {
+        display: block;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+        letter-spacing: 0.15rem;
+        text-align: center;
+      }
     }
     &__email,
     &__phone,
@@ -69,11 +100,18 @@
         content: url(../../assets/images/footer/pin.svg);
         margin: 0.5rem 2rem 0 -0.1rem;
       }
+      @media (max-width: 767px) {
+        margin: 4.2rem 0 3.8rem 0;
+      }
     }
     &__london {
       &::before {
         content: url(../../assets/images/footer/pin.svg);
         margin: -0.5rem 2rem 0 -0.1rem;
+      }
+      @media (max-width: 767px) {
+        margin-top: 0.8rem;
+        align-self: flex-start;
       }
     }
   }
@@ -83,9 +121,20 @@
     justify-content: center;
     padding-left: 2rem;
 
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
     @media (max-width: 1279px) {
       margin: 5.6rem 0 0 0;
       padding: 0;
+    }
+    @media (max-width: 767px) {
+      margin: 3.6rem 0 0 0;
+      max-width: 26rem;
+      max-height: 26.9rem;
+      align-self: center;
     }
   }
 }
