@@ -303,6 +303,10 @@ ul {
   line-height: 5.7rem;
 }
 
+.main-page .main-page__content .main-page__caption span {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .main-page .main-page__content .main-page__caption {
     max-width: 30rem;

@@ -52,6 +52,11 @@
         max-width: 31rem;
         @include caption($color: $light, $fz: 4.4rem);
         line-height: 5.7rem;
+
+        
+        span {
+          display: block;
+        }
         
         @media (max-width: 767px) {
           max-width: 30rem;
