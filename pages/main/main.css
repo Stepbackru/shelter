@@ -993,6 +993,8 @@ ul {
 
 .donation__pets {
   margin: 1.2rem 3.1rem 0 0;
+  max-width: 50.5rem;
+  max-height: 26.1rem;
 }
 
 .donation__pets .donation__image {
@@ -1406,8 +1408,12 @@ ul {
 
 @media (max-width: 767px) {
   .footer__image {
+    margin: 3.6rem 0 0 0;
     max-width: 26rem;
     max-height: 26.9rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
