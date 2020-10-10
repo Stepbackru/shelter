@@ -156,6 +156,13 @@ ul {
   }
 }
 
+@media (max-width: 767px) {
+  .footer .contacts .location__caption,
+  .footer .location .location__caption {
+    max-width: 24rem;
+  }
+}
+
 .footer .contacts__email, .footer .contacts__phone, .footer .contacts__boston, .footer .contacts__london,
 .footer .location__email,
 .footer .location__phone,

@@ -67,6 +67,11 @@
         text-align: center;
       }
     }
+    .location__caption {
+      @media (max-width: 767px) {
+        max-width: 24rem;
+      }
+    }
     &__email,
     &__phone,
     &__boston,
