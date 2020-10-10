@@ -145,7 +145,7 @@
     @media (max-width: 1279px) {
       margin: 8rem 0 0 0;
     }
-    @media (max-width: 1279px) {
+    @media (max-width: 767px) {
       margin: 4.2rem 0 0 0;
       max-width: 26rem;
       max-height: 35.3rem;
@@ -187,6 +187,7 @@
 
       @media (max-width: 1279px) {
         max-width: 43.6rem;
+        letter-spacing: 0.007rem;
       }
       @media (max-width: 767px) {
         max-width: 27rem;

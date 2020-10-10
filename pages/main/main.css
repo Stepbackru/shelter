@@ -452,7 +452,7 @@ ul {
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: 767px) {
   .about .about__pets {
     margin: 4.2rem 0 0 0;
     max-width: 26rem;
@@ -519,6 +519,7 @@ ul {
 @media (max-width: 1279px) {
   .about .about__content .about__text {
     max-width: 43.6rem;
+    letter-spacing: 0.007rem;
   }
 }
 
