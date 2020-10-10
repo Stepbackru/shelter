@@ -505,13 +505,17 @@
       @include caption($color: $dark-l, $fz: 3.5rem);
       line-height: 4.38rem;
       letter-spacing: 0.2rem;
+
+      span {
+        display: block;
+      }
       
       @media (max-width: 1279px) {
         line-height: 4.5rem;
       }
       @media (max-width: 767px) {
         font-size: 2.5rem;
-        line-height: 3.4rem;
+        line-height: 3.3rem;
         letter-spacing: 0.15rem;
         text-align: center;
       }
