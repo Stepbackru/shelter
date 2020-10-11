@@ -47,6 +47,11 @@
   @include main-block($max-height: 134.2rem, $bg: $light-l);
   padding: 8rem 0 10rem 0;
 
+  
+  @media (max-width: 1279px) {
+    max-height: 173.3rem;
+  }
+
   .wrapper {
     display: flex;
     align-items: center;
@@ -72,6 +77,14 @@
     @include flex($content: space-between);
     flex-wrap: wrap;
 
+    @media (max-width: 1279px) {
+      margin: 3rem 0 4rem;
+      padding: 0 6.3rem;
+      max-height: 136.5rem;
+      overflow: hidden;
+    }
+    
+
     .pets__card {
       max-width: 27rem;
       padding: 0 0 3rem 0;
@@ -86,6 +99,14 @@
 
       &:nth-child(n+5) {
         margin-top: 3.1rem;
+      }
+
+      @media (max-width: 1279px) {
+        padding: 0 0 6.1rem 0;
+
+        &:nth-child(n+5) {
+          margin-top: 0;
+        }
       }
     }
     .pets__photo {
@@ -118,6 +139,10 @@
     display: flex;
     justify-content: space-between;
     margin: 6rem 0 0.1rem 0;
+
+    @media (max-width: 1279px) {
+      margin: 0;
+    }
 
     &__button {
       width: 5.2rem;
