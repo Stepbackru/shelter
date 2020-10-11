@@ -9,6 +9,10 @@
     max-width: 76.8rem;
     padding: 0 3rem;
   }
+  @media (max-width: 767px) {
+    max-width: 32rem;
+    padding: 0 1rem;
+  }
 }
 
 @import "../../assets/components/header/header.scss";
@@ -27,6 +31,14 @@
       color: $dark;
     }
   }
+  &__burger {
+    @media (max-width: 767px) {
+      position: sticky;
+      top: 2rem;
+      right: 6.3rem;
+    }
+  }
+
   .menu {
     .menu__link {
       color: $dark-l;

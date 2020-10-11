@@ -42,6 +42,13 @@ ul {
   }
 }
 
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: 32rem;
+    padding: 0 1rem;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -242,6 +249,15 @@ ul {
 
 .header .logo .logo__subtitle {
   color: #292929;
+}
+
+@media (max-width: 767px) {
+  .header__burger {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 2rem;
+    right: 6.3rem;
+  }
 }
 
 .header .menu .menu__link {
