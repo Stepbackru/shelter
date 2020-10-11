@@ -35,7 +35,19 @@
     @media (max-width: 767px) {
       position: sticky;
       top: 2rem;
+
+      .header__burger_icon {
+        background: $black;
+
+        &::before {
+          background: $black;
+        }
+        &::after {
+          background: $black;
+        }
+      }
     }
+    
   }
 
   .menu {

@@ -257,6 +257,15 @@ ul {
     position: sticky;
     top: 2rem;
   }
+  .header__burger .header__burger_icon {
+    background: #000000;
+  }
+  .header__burger .header__burger_icon::before {
+    background: #000000;
+  }
+  .header__burger .header__burger_icon::after {
+    background: #000000;
+  }
 }
 
 .header .menu .menu__link {
