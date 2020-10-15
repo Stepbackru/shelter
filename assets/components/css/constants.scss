@@ -6,6 +6,7 @@ $light: #FFFFFF;
 $light-s: #FAFAFA;
 $light-l: #F6F6F6;
 $dark: #292929;
+$dark-op6: rgba(41, 41, 41, 0.6);
 $dark-l: #545454;
 $dark-xl: #4C4C4C;
 $dark-m: #B2B2B2;
@@ -14,3 +15,15 @@ $black: #000000;
 //backgrounds
 $main-page-bg: url(../../assets/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 $footer-bg: url(../../assets/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+
+
+.blackout {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: $dark-op6;
+  transform: .2s;
+}

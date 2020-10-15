@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <div class="wrapper">
-      <div class="logo">
+      <div id="logo" class="logo">
         <h1 class="logo__title">
           <a class="logo__link"  href="./main.html" aria-label="Link to home page">
             Cozy House
@@ -21,6 +21,14 @@
         <div class="header__burger_icon"></div>
       </button>
       <nav class="menu">
+        <div class="logo">
+          <h2 class="logo__title">
+            <a class="logo__link"  href="./main.html" aria-label="Link to home page">
+              Cozy House
+            </a></h2>
+          <h4 class="logo__subtitle">Shelter for pets in Boston</h4>
+          
+        </div>
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link menu__link-active" href="./main.html">About the shelter</a></li>
           <li class="menu__item"><a class="menu__link" href="../pets/pets.html">Our pets</a></li>
@@ -172,6 +180,8 @@
       </div>
     </div>
   </footer>
+
+  <div id="blackout"></div>
 
   <script type="module" src="./script.js"></script>
 </body>
