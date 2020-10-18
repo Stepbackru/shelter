@@ -6,4 +6,4 @@ export const MENU = 'menu';
 export const MENU_ACTIVE = 'menu-active';
 export const BLACKOUT = 'blackout';
 export const LOGO = 'logo';
-export const LOGO_DISABLE = 'logo-disable';
+export const LOGO_ACTIVE = 'logo-active';

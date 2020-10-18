@@ -16,6 +16,7 @@
   .logo {
     display: flex;
     flex-direction: column;
+    transition: 0.5s;
     
     .logo__title {
       @include caption($color: $primary, $fz: 3.2rem);
@@ -27,9 +28,11 @@
       letter-spacing: 0.13rem;
     }
   }
-  .logo-disable {
-    display: none;
-    transition: .2s;
+  .logo-active {
+    position: absolute;
+    top: 0;
+    right: 12.4rem;
+    z-index: 99;
   }
 
   &__burger {

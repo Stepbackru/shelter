@@ -139,6 +139,8 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header .logo .logo__title {
@@ -158,10 +160,11 @@ ul {
   letter-spacing: 0.13rem;
 }
 
-.header .logo-disable {
-  display: none;
-  -webkit-transition: .2s;
-  transition: .2s;
+.header .logo-active {
+  position: absolute;
+  top: 0;
+  right: 12.4rem;
+  z-index: 99;
 }
 
 .header__burger {

@@ -157,8 +157,9 @@ ul {
   letter-spacing: 0.13rem;
 }
 
-.header .logo-disable {
-  display: none;
+.header .logo-active {
+  position: fixed;
+  right: 0;
   -webkit-transition: .2s;
   transition: .2s;
 }
