@@ -7,3 +7,4 @@ export const MENU_ACTIVE = 'menu-active';
 export const BLACKOUT = 'blackout';
 export const LOGO = 'logo';
 export const LOGO_ACTIVE = 'logo-active';
+export const NOSCROLL = 'noscroll';

@@ -9,6 +9,7 @@ const burger = () => {
       document.querySelector(`.${C.MENU}`).classList.toggle(C.MENU_ACTIVE);
       document.getElementById(C.BLACKOUT).classList.toggle(C.BLACKOUT);
       document.getElementById(C.LOGO).classList.toggle(C.LOGO_ACTIVE);
+      document.body.classList.toggle(C.NOSCROLL);
     }
 
   });
