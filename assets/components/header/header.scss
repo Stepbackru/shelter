@@ -152,9 +152,7 @@
         line-height: 5.12rem;
       }
     }
-    .menu__link-active,
-    .menu__link:active,
-    .menu__link:focus {
+    .menu__link-active {
       color: $light;
       border-bottom: 0.3rem solid $primary;
     }

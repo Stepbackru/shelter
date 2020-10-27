@@ -257,9 +257,7 @@ ul {
   }
 }
 
-.header .menu .menu__link-active,
-.header .menu .menu__link:active,
-.header .menu .menu__link:focus {
+.header .menu .menu__link-active {
   color: #FFFFFF;
   border-bottom: 0.3rem solid #F1CDB3;
 }

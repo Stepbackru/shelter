@@ -25,7 +25,7 @@ html {
 body, ul, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -89,7 +89,7 @@ html {
 body, ul, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -104,6 +104,13 @@ button:hover {
 
 ul {
   list-style-type: none;
+}
+
+.noscroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -138,6 +145,8 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header .logo .logo__title {
@@ -158,10 +167,10 @@ ul {
 }
 
 .header .logo-active {
-  position: fixed;
-  right: 0;
-  -webkit-transition: .2s;
-  transition: .2s;
+  position: absolute;
+  top: 0;
+  right: 12.4rem;
+  z-index: 99;
 }
 
 .header__burger {
@@ -637,7 +646,7 @@ html {
 body, ul, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
