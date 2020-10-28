@@ -175,6 +175,7 @@ ul {
 
 @media (max-width: 767px) {
   .header .menu {
+    display: none;
     width: 32rem;
     height: 82.3rem;
     position: absolute;
@@ -260,6 +261,10 @@ ul {
 .header .menu .menu__link-active {
   color: #FFFFFF;
   border-bottom: 0.3rem solid #F1CDB3;
+}
+
+.header .menu-display {
+  display: block;
 }
 
 .header .menu-active {

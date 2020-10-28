@@ -5,6 +5,7 @@ export const BURGER_ACTIVE = 'header__burger-active';
 export const MENU = 'menu';
 export const MENU_LINK = 'menu__link';
 export const MENU_ACTIVE = 'menu-active';
+export const MENU_DISPLAY = 'menu-display';
 export const BLACKOUT = 'blackout';
 export const LOGO = 'logo';
 export const LOGO_ACTIVE = 'logo-active';

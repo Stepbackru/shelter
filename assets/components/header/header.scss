@@ -98,6 +98,7 @@
     width: 44.3rem;
     
     @media (max-width: 767px) {
+      display: none;
       width: 32rem;
       height: 82.3rem;
       position: absolute;
@@ -156,6 +157,9 @@
       color: $light;
       border-bottom: 0.3rem solid $primary;
     }
+  }
+  .menu-display {
+    display: block;
   }
 
   .menu-active {
